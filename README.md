@@ -10,8 +10,6 @@ alipayCertPath（公共参数） | 支付宝公钥证书路径
 rootCertPath（公共参数） | 根证书路径
 appId（公共参数） | 应用id
 rsaPrivateKey（公共参数） | 私钥
-alipayCertPath（公共参数） | 根证书路径
-alipayCertPath（公共参数） | 根证书路径
 
 # 转账传参
 参数名称 | 参数说明

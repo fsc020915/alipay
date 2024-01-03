@@ -1,5 +1,5 @@
 {
-    "name": "fsc/alipay",
+    "name": "fsc-1/alipay",
     "description": "支付宝单笔转账",
     "type": "library",
     "license": "MIT",

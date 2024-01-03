@@ -103,8 +103,8 @@ class Pay
         $bizcontent = [
             'out_biz_no' => $info['out_biz_no'], // 商户转账唯一订单号------必填
             'order_id' => $info['order_id'], // 支付宝转账单据号
-            'product_code' =>  $info['product_code'], // 销售产品码  STD_RED_PACKET：现金红包 TRANS_ACCOUNT_NO_PWD：单笔无密转账到支付宝账户 TRANS_BANKCARD_NO_PWD：单笔无密转账到银行卡
-            'biz_scene' => $info['biz_scene'], // 业务场景 PERSONAL_PAY：C2C现金红包-发红包； PERSONAL_COLLECTION：C2C现金红包-领红包； REFUND：C2C现金红包-红包退回； DIRECT_TRANSFER：B2C现金红包、单笔无密转账
+            'product_code' =>  $info['product_code']??'TRANS_ACCOUNT_NO_PWD', // 销售产品码  STD_RED_PACKET：现金红包 TRANS_ACCOUNT_NO_PWD：单笔无密转账到支付宝账户 TRANS_BANKCARD_NO_PWD：单笔无密转账到银行卡
+            'biz_scene' => $info['biz_scene']??'DIRECT_TRANSFER', // 业务场景 PERSONAL_PAY：C2C现金红包-发红包； PERSONAL_COLLECTION：C2C现金红包-领红包； REFUND：C2C现金红包-红包退回； DIRECT_TRANSFER：B2C现金红包、单笔无密转账
             'pay_fund_order_id' => $info['pay_fund_order_id'] // 支付宝支付资金流水号
         ];
         return $this->handle($request, $bizcontent, $aop);

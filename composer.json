@@ -1,0 +1,21 @@
+{
+    "name": "fsc/alipay",
+    "description": "支付宝单笔转账",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fsc\\Alipay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fsc",
+            "email": "1846869817@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    }
+}
